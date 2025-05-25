@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  from5:
+    build: ./from5
+    container_name: myserver
+    ports:
+      - "8080:8080"
+
+  second:
+    build: ./second
+    container_name: mysecond
+    ports:
+      - "80:8080"
